@@ -23,6 +23,11 @@ function Navbar() {
     }, []);
     window.addEventListener('resize', showButton);
 
+
+    function ir(){
+        
+    }
+
     return (
         <>
             <nav className="navbar">
@@ -41,7 +46,7 @@ function Navbar() {
                         </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/' className='nav-links' onClick={fecharMenu}>
+                            <Link to='/' className='nav-links' onClick={fecharMenu, ir}>
                                 Produto
                             </Link>
                         </li>

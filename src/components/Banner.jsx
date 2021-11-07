@@ -7,16 +7,16 @@ import './Banner.css';
 function Banner() {
   return (
     <div className='banner-container'>
-      <img src='/images/teste.jpg'  />
-      <h1>Teste</h1>
-      <p>Teste texto</p>
+      <video src='/videos/gameclips.mp4' autoPlay loop muted  />
+      <h1>NeoGaming</h1>
+      <p>Notícias do mundo dos Games</p>
       <div className='banner-button'>
         <Button
           className='button'
           buttonStyle='button-outline'
           buttonSize='button-large'
         >
-          GET STARTED
+          Inscreva-se
         </Button>
         <Button
           className='button'

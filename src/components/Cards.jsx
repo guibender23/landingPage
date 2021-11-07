@@ -1,7 +1,7 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
-
+import Calendar from './Calendar';
 function Cards() {
   return (
     <div className='cards'>
@@ -30,7 +30,46 @@ function Cards() {
           </ul>
         </div>
       </div>
+
+      <h1>Calendiario de Lançamentos</h1>
+      <div className='cards__container'>
+        <div className='cards__wrapper'>
+          <ul className='cards__items'>
+            <Calendar
+              src='images/coming.jpg'
+              day='02 | Nov'
+              text1="Unpacking"
+            />
+            <Calendar
+              src='images/coming.jpg'
+              day='02 | Nov'
+              text1="Unpacking"
+            />
+            <Calendar
+              src='images/coming.jpg'
+              day='02 | Nov'
+              text1="Unpacking"
+            />
+            <Calendar
+              src='images/coming.jpg'
+              day='02 | Nov'
+              text1="Unpacking"
+            />
+            <Calendar
+              src='images/coming.jpg'
+              day='02 | Nov'
+              text1="Unpacking"
+            />
+            <Calendar
+              src='images/coming.jpg'
+              day='02 | Nov'
+              text1="Unpacking"
+            />
+          </ul>
+        </div>
+      </div>
     </div>
+    
   );
 }
 

@@ -99,6 +99,20 @@ h1 {
   line-height: 24px;
 }
 
+.cards__day__calendar{
+ 
+  color: rgb(143, 134, 6);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.cards__item__text__calendar{
+  margin-top: 10px;
+  color: #252e48;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 @media only screen and (min-width: 1200px) {
   .content__blog__container {
     width: 84%;
