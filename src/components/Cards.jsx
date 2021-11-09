@@ -16,7 +16,7 @@ function Cards() {
             <CardItem
               src='images/elden-ring.jpg'
               text='Elden Ring recebe novo trailer promocional'
-              label='Adventure'
+              label='Aventura'
               path="/"
             />
             <CardItem
@@ -28,27 +28,27 @@ function Cards() {
             <CardItem
               src='images/forza5.jpg'
               text='Forza Horizon 5 entra em Early Access no Xbox'
-              label='Race'
+              label='Corrida'
               path='/'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='images/elden-ring.jpg'
-              text='Elden Ring recebe novo trailer promocional'
-              label='Adventure'
+              src='images/elderscrolls.jpg'
+              text='The Elder Scrolls VI ainda está anos de distância de seu lançamento'
+              label='RPG'
               path="/"
             />
             <CardItem
-              src='images/cod.jpg'
-              text='Lançamento Mundial: Call of Duty - Vanguard'
-              label='FPS'
+              src='images/gta4.jpg'
+              text='Rumor: GTA IV Remaster será lançado em 2023'
+              label='Ação'
               path='/'
             />
             <CardItem
-              src='images/forza5.jpg'
-              text='Forza Horizon 5 entra em Early Access no Xbox'
-              label='Race'
+              src='images/desconto.jpeg'
+              text='Veja aqui os melhores descontos de games na BlackFrday'
+              label='Descontos'
               path='/'
             />
           </ul>
@@ -65,7 +65,7 @@ function Cards() {
         <br/>
         <br/>
      
-        <h1 >Calendiario de Lançamentos</h1>
+        <h1 >Calendário de Lançamentos</h1>
         <div className='cards__container' id="calendar">
           <div className='cards__wrapper'>
             <ul className='cards__items'>
@@ -73,7 +73,9 @@ function Cards() {
                 src='images/forza_horizon_5.jpg'
                 day='09 | Nov'
                 text1="Forza Horizon 5"
+                
               />
+              
               <Calendar
                 src='images/final_fantasy_v.jpg'
                 day='10 | Nov'

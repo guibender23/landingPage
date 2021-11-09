@@ -74,7 +74,7 @@ function Footer() {
               <VideoGameSVG />
             </Link>
           </div>
-          <small class='website-rights'>NeoGaming © 2020</small>
+          <small class='website-rights'>NeoGaming © 2021</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'

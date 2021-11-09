@@ -51,7 +51,7 @@ function Navbar() {
                         </li>
                         <li className="nav-item">
                             <Link to='calendar' smooth={true} className='nav-links' onClick={fecharMenu}>
-                                Calendario
+                                Calendário
                             </Link>
                         </li>
                         <li className="nav-item">
