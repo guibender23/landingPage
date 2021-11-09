@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './Button';
+import videogame from '../svg/videogame.svg'
 import "./Footer.css"
 
 function Footer() {
@@ -8,56 +9,56 @@ function Footer() {
     <div className="footer-container">
       <section className="footer-subscription">
         <p className="footer-subscription-heading">
-          Have any question?
+          Alguma dúvida?
         </p>
         <p className="footer-subscription-text">
-          Send us your question
+          Nos mande sua pergunta
         </p>
         <div className="input-areas">
           <form >
             <input
               type="email"
               name='email'
-              placeholder="Your email"
+              placeholder="Seu email"
               className="footer-input"
             />
             <textarea 
               className="textarea-footer" 
-              placeholder="Tell us more" 
+              placeholder="Qual o seu feedback?" 
               rows="5">
             </textarea>
-            <Button buttonStyle="button-outline">Send Message</Button>
+            <Button buttonStyle="button-outline">Enviar mensagem</Button>
           </form>
         </div>
       </section>
       <div className="footer-links">
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
-            <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
+            <h2>Sobre nós</h2>
+            <Link to='/sign-up'>Como funciona</Link>
+            <Link to='/'>Depoimentos</Link>
+            <Link to='/'>Carreiras</Link>
+            <Link to='/'>Investidores</Link>
+            <Link to='/'>Termos de Serviço</Link>
           </div>
           <div class='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
+            <h2>Contate-nos</h2>
+            <Link to='/'>Contatos</Link>
+            <Link to='/'>Suporte</Link>
+            <Link to='/'>Destinos</Link>
+            <Link to='/'>Patrocínios</Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
+            <Link to='/'>Enviar Video</Link>
+            <Link to='/'>Embaixadores</Link>
+            <Link to='/'>Agências</Link>
+            <Link to='/'>Influencers</Link>
           </div>
           <div class='footer-link-items'>
-            <h2>Social Media</h2>
+            <h2>Redes Sociais</h2>
             <Link to='/'>Instagram</Link>
             <Link to='/'>Facebook</Link>
             <Link to='/'>Youtube</Link>
@@ -69,11 +70,11 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              TRVL
-              <i class='fab fa-typo3' />
+              NEOGAMING
+              <img src={videogame}></img>
             </Link>
           </div>
-          <small class='website-rights'>TRVL © 2020</small>
+          <small class='website-rights'>NeoGaming © 2020</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'

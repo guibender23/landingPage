@@ -38,34 +38,34 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <Calendar
-              src='images/coming.jpg'
-              day='02 | Nov'
-              text1="Unpacking"
+              src='images/forza_horizon_5.jpg'
+              day='09 | Nov'
+              text1="Forza Horizon 5"
             />
             <Calendar
-              src='images/coming.jpg'
-              day='02 | Nov'
-              text1="Unpacking"
+              src='images/final_fantasy_v.jpg'
+              day='10 | Nov'
+              text1="Final Fantasy V:Pixel Remaster"
             />
             <Calendar
-              src='images/coming.jpg'
-              day='02 | Nov'
-              text1="Unpacking"
+              src='images/gta.jpg'
+              day='11 | Nov'
+              text1="Grand Theft Auto: The Trilogy"
             />
             <Calendar
-              src='images/coming.jpg'
-              day='02 | Nov'
-              text1="Unpacking"
+              src='images/bf.jpg'
+              day='19 | Nov'
+              text1="Battlefield 2042"
             />
             <Calendar
-              src='images/coming.jpg'
-              day='02 | Nov'
-              text1="Unpacking"
+              src='images/pokemon.jpg'
+              day='19 | Nov'
+              text1="Pokemon Brilliant Diamond"
             />
             <Calendar
-              src='images/coming.jpg'
-              day='02 | Nov'
-              text1="Unpacking"
+              src='images/halo.jpg'
+              day='08 | Dez'
+              text1="Halo Infinite"
             />
           </ul>
         </div>
