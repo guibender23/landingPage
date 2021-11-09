@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './Button';
-import videogame from '../svg/videogame.svg'
+import {ReactComponent as VideoGameSVG} from '../svg/videogame.svg'
 import "./Footer.css"
 
 function Footer() {
@@ -71,7 +71,7 @@ function Footer() {
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
               NEOGAMING
-              <img src={videogame}></img>
+              <VideoGameSVG />
             </Link>
           </div>
           <small class='website-rights'>NeoGaming © 2020</small>

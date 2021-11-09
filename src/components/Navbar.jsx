@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { Button } from './Button.jsx';
 import './Navbar.css';
-import videogame from '../svg/videogame.svg'
+import {ReactComponent as VideoGameSVG} from '../svg/videogame.svg'
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -29,10 +29,10 @@ function Navbar() {
 
     return (
         <>
-            <nav className="navbar">
+            <nav className="navbar" id="nav">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo" onClick={fecharMenu}>
-                        NeoGaming <img src={videogame}></img>
+                        NeoGaming <VideoGameSVG />
 
                     </Link> {/*Link substitui o <a>*/}
                     <div className="menu-icon" onClick={aoClicar}>
@@ -40,18 +40,18 @@ function Navbar() {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                        <Link to='card' smooth={true} className='nav-links' onClick={fecharMenu}>
+                        <Link to='banner' smooth={true} className='nav-links' onClick={fecharMenu}>
                             Home
                         </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/' className='nav-links' onClick={fecharMenu}>
-                                Produto
+                            <Link to='cards-news' smooth={true} className='nav-links' onClick={fecharMenu}>
+                                Novidades
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/' className='nav-links' onClick={fecharMenu}>
-                                Contato
+                            <Link to='calendar' smooth={true} className='nav-links' onClick={fecharMenu}>
+                                Calendario
                             </Link>
                         </li>
                         <li className="nav-item">
