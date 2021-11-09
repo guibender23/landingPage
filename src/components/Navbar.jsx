@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { Button } from './Button.jsx';
 import './Navbar.css';
 
@@ -24,10 +24,6 @@ function Navbar() {
     window.addEventListener('resize', showButton);
 
 
-    function ir(){
-        
-    }
-
     return (
         <>
             <nav className="navbar">
@@ -41,12 +37,12 @@ function Navbar() {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                        <Link to='/' className='nav-links' onClick={fecharMenu}>
+                        <Link to='card' smooth={true} className='nav-links' onClick={fecharMenu}>
                             Home
                         </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/' className='nav-links' onClick={fecharMenu, ir}>
+                            <Link to='/' className='nav-links' onClick={fecharMenu}>
                                 Produto
                             </Link>
                         </li>

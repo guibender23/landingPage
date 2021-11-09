@@ -3,6 +3,8 @@ import './Cards.css';
 import CardItem from './CardItem';
 import Calendar from './Calendar';
 function Cards() {
+
+  
   return (
     <div className='cards'>
       <h1>Novidade no mundo dos Games!</h1>
@@ -13,7 +15,7 @@ function Cards() {
               src='images/elden-ring.jpg'
               text='Elden Ring recebe novo trailer promocional'
               label='Adventure'
-              path='/'
+              path="/"
             />
             <CardItem
               src='images/cod.jpg'
