@@ -66,6 +66,10 @@
     width: 160px;
     box-sizing: border-box;
   }
+
+  
+
+
   
   .footer-link-items h2 {
     margin-bottom: 16px;
@@ -85,6 +89,40 @@
     color: #e9e9e9;
     transition: 0.3s ease-out;
   }
+
+
+  .footer-link-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px;
+    width: 260px;
+    box-sizing: border-box;
+  }
+
+  .footer-link-avatar h2 {
+    margin-bottom: 16px;
+  }
+  
+  .footer-link-avatar > h2 {
+    color: #fff;
+  }
+  
+  .footer-link-avatar a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-link-avatar a:hover {
+    color: #e9e9e9;
+    transition: 0.3s ease-out;
+  }
+
+  .avatar-icon{
+    margin: auto,55px;
+  }
+
 
   .footer-email-form h2 {
     margin-bottom: 2rem;
@@ -114,6 +152,9 @@
   }
 
 
+  Avatar{
+    width: 200px;
+  } 
 
 
   /* Social Icons */

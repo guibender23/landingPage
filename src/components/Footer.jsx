@@ -79,9 +79,9 @@ function Footer() {
 
       <div className="footer-links">
         <div className="footer-link-wrapper">
-          <div className="footer-link-items">
+          <div className="footer-link-avatar">
             <h2>Sobre nós</h2>
-          <Stack className="avatar" direction="row">
+          <Stack className="avatar" direction="row" spacing={2}>
             <Avatar  alt="Guilherme Bender" src="images/gui.png" sx={{ width: 66, height: 66 }} />
             <Avatar  alt="Alice Guzas" src="images/alice.png"  sx={{ width: 66, height: 66 }} />
             <Avatar  alt="Júnior Fogassi" src="images/jr.png"  sx={{ width: 66, height: 66 }} />
