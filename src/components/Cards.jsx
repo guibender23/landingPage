@@ -4,11 +4,11 @@ import CardItem from './CardItem';
 import Calendar from './Calendar';
 function Cards() {
 
-  
+
   return (
-    
+
     <div className='cards' id="cards-news">
-      <br/><br/>
+      <br /><br />
       <h1>Novidade no mundo dos Games!</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
@@ -48,65 +48,113 @@ function Cards() {
             <CardItem
               src='images/desconto.jpeg'
               text='Veja aqui os melhores descontos de games na BlackFrday'
-              label='Descontos'
+              label='Promoção'
               path='/'
             />
           </ul>
         </div>
       </div>
-      
+
       <div id="calendar">
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-     
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
         <h1 >Calendário de Lançamentos</h1>
         <div className='cards__container' id="calendar">
           <div className='cards__wrapper'>
             <ul className='cards__items'>
+
               <Calendar
-                src='images/forza_horizon_5.jpg'
+                src='images/knockcity.jpg'
+                day='02 | Nov'
+                text1="Knockout City"
+
+              />
+
+              <Calendar
+                src='images/forza5.jpg'
                 day='09 | Nov'
                 text1="Forza Horizon 5"
-                
+
               />
-              
+
+              <Calendar
+                src='images/jurassic.jpg'
+                day='09 | Nov'
+                text1="jurassic world evolution 2"
+
+              />
+
               <Calendar
                 src='images/final_fantasy_v.jpg'
                 day='10 | Nov'
-                text1="Final Fantasy V:Pixel Remaster"
+                text1="Final Fantasy V: Pixel Remaster"
               />
+
               <Calendar
                 src='images/gta.jpg'
                 day='11 | Nov'
                 text1="Grand Theft Auto: The Trilogy"
               />
+
               <Calendar
                 src='images/bf.jpg'
                 day='19 | Nov'
                 text1="Battlefield 2042"
               />
+
+            </ul>
+
+            <ul className='cards__items'>
               <Calendar
                 src='images/pokemon.jpg'
                 day='19 | Nov'
                 text1="Pokemon Brilliant Diamond"
               />
+
+              <Calendar
+                src='images/solarash.jpg'
+                day='02 | Dez'
+                text1="Solar Ash"
+              />
+
+              <Calendar
+                src='images/finalfantasy14.jpg'
+                day='07 | Dez'
+                text1="Final Fantasy XIV: Endwalker"
+              />
+
               <Calendar
                 src='images/halo.jpg'
                 day='08 | Dez'
                 text1="Halo Infinite"
               />
+
+              <Calendar
+                src='images/syberia.jpg'
+                day='10 | Dez'
+                text1="Syberia: The World Before"
+              />
+
+              <Calendar
+                src='images/fnaf.jpg'
+                day='16 | Dez'
+                text1="Five Nights at Freddy's: Security Breach"
+              />
+
             </ul>
+
           </div>
         </div>
       </div>
     </div>
-    
+
   );
 }
 

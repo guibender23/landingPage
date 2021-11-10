@@ -1,10 +1,20 @@
-import React from 'react';
+import { TextField, Button, FormControlLabel, Switch } from '@material-ui/core';
+import React, {useState} from "react";
 import { Link } from 'react-router-dom';
-import { Button } from './Button';
-import {ReactComponent as VideoGameSVG} from '../svg/videogame.svg'
+
+import { ReactComponent as VideoGameSVG } from '../svg/videogame.svg'
 import "./Footer.css"
 
 function Footer() {
+
+  const [promocoes,setPromocoes] = useState(true);
+  const [novidades,setNovidades] = useState(true);
+
+
+  function validação() {
+    alert("obrigado");
+  }
+
   return (
     <div className="footer-container">
       <section className="footer-subscription">
@@ -15,22 +25,57 @@ function Footer() {
           Nos mande sua pergunta
         </p>
         <div className="input-areas">
-          <form >
-            <input
+          <form onSubmit={(event) => {
+            event.preventDefault();
+          }}>
+            <TextField className="footer-input"
+              id="filled-basic"
+              label="Email"
               type="email"
-              name='email'
-              placeholder="Seu email"
-              className="footer-input"
+              variant="filled"
+              margin="normal"
+              fullWidth
+              required
             />
-            <textarea 
-              className="textarea-footer" 
-              placeholder="Qual o seu feedback?" 
-              rows="5">
-            </textarea>
-            <Button buttonStyle="button-outline">Enviar mensagem</Button>
+
+            <TextField className="textarea-footer"
+              label="Deixe uma mensagem"
+              type="text"
+              variant="filled"
+              margin="normal"
+              multiline
+              rows={5}
+              rowsMax={5}
+              fullWidth
+            />
+
+            
+            <FormControlLabel
+              label="Receber novidades"
+              control={<Switch
+                checked={novidades}
+                onChange={(event) => {
+                  setNovidades(event.target.checked)
+                }}
+                name="novidades"
+                color="primary" />}
+            />
+
+
+            <Button
+              type="submit"
+              variant="contained"
+              color="primary"
+              fullWidth
+              onClick={validação}
+            >
+              Enviar
+            </Button>
           </form>
+
         </div>
       </section>
+
       <div className="footer-links">
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
