@@ -2,9 +2,10 @@ import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
 import Calendar from './Calendar';
+import xbox from '../svg/xbox.svg';
+
+
 function Cards() {
-
-
   return (
 
     <div className='cards' id="cards-news">
@@ -47,7 +48,7 @@ function Cards() {
             />
             <CardItem
               src='images/desconto.jpeg'
-              text='Veja aqui os melhores descontos de games na BlackFrday'
+              text='Veja aqui os melhores descontos de games na Black Friday'
               label='Promoção'
               path='/'
             />
@@ -74,7 +75,6 @@ function Cards() {
                 src='images/knockcity.jpg'
                 day='02 | Nov'
                 text1="Knockout City"
-
               />
 
               <Calendar
@@ -87,7 +87,7 @@ function Cards() {
               <Calendar
                 src='images/jurassic.jpg'
                 day='09 | Nov'
-                text1="jurassic world evolution 2"
+                text1="Jurassic World Evolution 2"
 
               />
 

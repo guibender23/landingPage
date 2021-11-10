@@ -1,8 +1,9 @@
 import { TextField, Button, FormControlLabel, Switch } from '@material-ui/core';
 import React, {useState} from "react";
 import { Link } from 'react-router-dom';
-
 import { ReactComponent as VideoGameSVG } from '../svg/videogame.svg'
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
 import "./Footer.css"
 
 function Footer() {
@@ -12,7 +13,7 @@ function Footer() {
 
 
   function validação() {
-    alert("obrigado");
+    alert("FeedBack enviado com sucesso!");
   }
 
   return (
@@ -51,7 +52,7 @@ function Footer() {
 
             
             <FormControlLabel
-              label="Receber novidades"
+              label="Receber novidades do nosso site"
               control={<Switch
                 checked={novidades}
                 onChange={(event) => {
@@ -80,27 +81,11 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
             <h2>Sobre nós</h2>
-            <Link to='/sign-up'>Como funciona</Link>
-            <Link to='/'>Depoimentos</Link>
-            <Link to='/'>Carreiras</Link>
-            <Link to='/'>Investidores</Link>
-            <Link to='/'>Termos de Serviço</Link>
-          </div>
-          <div class='footer-link-items'>
-            <h2>Contate-nos</h2>
-            <Link to='/'>Contatos</Link>
-            <Link to='/'>Suporte</Link>
-            <Link to='/'>Destinos</Link>
-            <Link to='/'>Patrocínios</Link>
-          </div>
-        </div>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Enviar Video</Link>
-            <Link to='/'>Embaixadores</Link>
-            <Link to='/'>Agências</Link>
-            <Link to='/'>Influencers</Link>
+          <Stack className="avatar" direction="row">
+            <Avatar  alt="Guilherme Bender" src="images/gui.png" sx={{ width: 66, height: 66 }} />
+            <Avatar  alt="Alice Guzas" src="images/alice.png"  sx={{ width: 66, height: 66 }} />
+            <Avatar  alt="Júnior Fogassi" src="images/jr.png"  sx={{ width: 66, height: 66 }} />
+          </Stack>
           </div>
           <div class='footer-link-items'>
             <h2>Redes Sociais</h2>
