@@ -6,7 +6,6 @@ import {ReactComponent as VideoGameSVG} from '../svg/videogame.svg';
 import {ReactComponent as HomeSVG} from '../svg/home.svg';
 import {ReactComponent as CalendarSVG} from '../svg/calendar.svg';
 import {ReactComponent as NewsSVG} from '../svg/news.svg';
-import {ReactComponent as ReviewsSVG} from '../svg/reviews.svg';
 
 function Navbar() {
     const [click, setClick] = useState(false);
