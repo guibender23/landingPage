@@ -1,7 +1,7 @@
 import { TextField, Button, FormControlLabel, Switch } from '@material-ui/core';
 import React, {useState} from "react";
 import { Link } from 'react-router-dom';
-import { ReactComponent as VideoGameSVG } from '../svg/videogame.svg'
+import { ReactComponent as VideoGameSVG } from '../svg/videogame.svg';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import "./Footer.css"
@@ -80,7 +80,7 @@ function Footer() {
       <div className="footer-links">
         <div className="footer-link-wrapper">
           <div className="footer-link-avatar">
-            <h2>Sobre nós</h2>
+            <h2>Vilões | Squad 1</h2>
           <Stack className="avatar" direction="row" spacing={2}>
             <Avatar  alt="Guilherme Bender" src="images/gui.png" sx={{ width: 66, height: 66 }} />
             <Avatar  alt="Alice Guzas" src="images/alice.png"  sx={{ width: 66, height: 66 }} />
@@ -88,11 +88,21 @@ function Footer() {
           </Stack>
           </div>
           <div class='footer-link-items'>
-            <h2>Redes Sociais</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
+            <h2>Integrantes</h2>
+            <Link className="infos" to='/'>Guilherme Bender 
+             guibender_@hotmail.com  
+             Linkedin:Guilherme Bender
+             </Link>
+
+            <Link className="infos" to='/'>Alice Guzas   
+             guzasalice@gmail.com   
+             Linkedin:Alice Martofel Guzas 
+             </Link>
+
+            <Link className="infos" to='/'>Júnior Fogassi 
+             jrfogassi@gmail.com 
+             Linkedin:Júnior Fogassi 
+             </Link>
           </div>
         </div>
       </div>

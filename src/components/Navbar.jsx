@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { Button } from './Button.jsx';
 import './Navbar.css';
-import {ReactComponent as VideoGameSVG} from '../svg/videogame.svg'
+import {ReactComponent as VideoGameSVG} from '../svg/videogame.svg';
+import {ReactComponent as HomeSVG} from '../svg/home.svg';
+import {ReactComponent as CalendarSVG} from '../svg/calendar.svg';
+import {ReactComponent as NewsSVG} from '../svg/news.svg';
+import {ReactComponent as ReviewsSVG} from '../svg/reviews.svg';
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -32,7 +36,7 @@ function Navbar() {
             <nav className="navbar" id="nav">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo" onClick={fecharMenu}>
-                        NeoGaming <VideoGameSVG />
+                        NEOGAMING <VideoGameSVG />
 
                     </Link> {/*Link substitui o <a>*/}
                     <div className="menu-icon" onClick={aoClicar}>
@@ -41,17 +45,17 @@ function Navbar() {
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
                         <Link to='banner' smooth={true} className='nav-links' onClick={fecharMenu}>
-                            Home
+                            <HomeSVG/>
                         </Link>
                         </li>
                         <li className="nav-item">
                             <Link to='cards-news' smooth={true} className='nav-links' onClick={fecharMenu}>
-                                Novidades
+                                <NewsSVG/>
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link to='calendar' smooth={true} className='nav-links' onClick={fecharMenu}>
-                                Calendário
+                                <CalendarSVG/>
                             </Link>
                         </li>
                         <li className="nav-item">

@@ -2,8 +2,6 @@ import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
 import Calendar from './Calendar';
-import xbox from '../svg/xbox.svg';
-
 
 function Cards() {
   return (
@@ -55,6 +53,40 @@ function Cards() {
           </ul>
         </div>
       </div>
+  
+        <div className='cards' id="reviews">
+          <br/><br/>
+        <h1>Reviews</h1>
+        <div className='cards_container'>
+          <div className='cards_wrapper'>
+            <ul className='cards_items'>
+              <CardItem
+                src='images/farcry6.jpg'
+                text='Jogamos Far Cry 6: Acerto ou erro da Ubisoft?'
+                path='/'
+              />
+              <CardItem
+                src='images/back4blood.jpg'
+                text='Back 4 Blood: Nostálgico e frenético!'
+                path='/'
+              />
+              </ul>
+              <ul className='cards_items'>
+              <CardItem
+                src='images/riders.jpg'
+                text="Riders Republic: Jogo de esporte do ano?"
+                path='/'
+              />
+              <CardItem
+                src="images/lstc.png"
+                text="Life is Strange: True Colors: Um drama emocionante"
+                path="/"
+              />
+            </ul>
+          </div>
+        </div>
+      </div>
+
 
       <div id="calendar">
         <br />
@@ -72,39 +104,39 @@ function Cards() {
             <ul className='cards__items'>
 
               <Calendar
-                src='images/knockcity.jpg'
+                src='images/knockcity.png'
                 day='02 | Nov'
                 text1="Knockout City"
               />
 
               <Calendar
-                src='images/forza5.jpg'
+                src='images/forza5.png'
                 day='09 | Nov'
                 text1="Forza Horizon 5"
 
               />
 
               <Calendar
-                src='images/jurassic.jpg'
+                src='images/jurassic.png'
                 day='09 | Nov'
                 text1="Jurassic World Evolution 2"
 
               />
 
               <Calendar
-                src='images/final_fantasy_v.jpg'
+                src='images/final_fantasy_v.png'
                 day='10 | Nov'
                 text1="Final Fantasy V: Pixel Remaster"
               />
 
               <Calendar
-                src='images/gta.jpg'
+                src='images/gta.png'
                 day='11 | Nov'
                 text1="Grand Theft Auto: The Trilogy"
               />
 
               <Calendar
-                src='images/bf.jpg'
+                src='images/bf.png'
                 day='19 | Nov'
                 text1="Battlefield 2042"
               />
@@ -113,37 +145,37 @@ function Cards() {
 
             <ul className='cards__items'>
               <Calendar
-                src='images/pokemon.jpg'
+                src='images/pokemon.png'
                 day='19 | Nov'
                 text1="Pokemon Brilliant Diamond"
               />
 
               <Calendar
-                src='images/solarash.jpg'
+                src='images/solarash.png'
                 day='02 | Dez'
                 text1="Solar Ash"
               />
 
               <Calendar
-                src='images/finalfantasy14.jpg'
+                src='images/finalfantasy14.png'
                 day='07 | Dez'
                 text1="Final Fantasy XIV: Endwalker"
               />
 
               <Calendar
-                src='images/halo.jpg'
+                src='images/halo.png'
                 day='08 | Dez'
                 text1="Halo Infinite"
               />
 
               <Calendar
-                src='images/syberia.jpg'
+                src='images/syberia.png'
                 day='10 | Dez'
                 text1="Syberia: The World Before"
               />
 
               <Calendar
-                src='images/fnaf.jpg'
+                src='images/fnaf.png'
                 day='16 | Dez'
                 text1="Five Nights at Freddy's: Security Breach"
               />
