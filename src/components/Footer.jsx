@@ -1,20 +1,33 @@
 import { TextField, Button, FormControlLabel, Switch } from '@material-ui/core';
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import { ReactComponent as VideoGameSVG } from '../svg/videogame.svg';
+import { ReactComponent as Linkedin } from '../svg/linkedin.svg';
+import { ReactComponent as Email } from '../svg/email.svg';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import "./Footer.css"
 
 function Footer() {
 
-  const [promocoes,setPromocoes] = useState(true);
-  const [novidades,setNovidades] = useState(true);
+  
+  const [novidades, setNovidades] = useState(true);
 
 
   function validação() {
-    alert("FeedBack enviado com sucesso!");
+    alert("Sua mensagem foi enviado com sucesso!");
   }
+
+  function linkedinGui(){
+      window.location.href = ('https://www.linkedin.com/in/guilherme-bender/');
+  }
+  function linkedinAlice(){
+    window.location.href = ('https://www.linkedin.com/in/alice-martofel-guzas-579428213/');
+  }
+  function linkedinJr(){
+    window.location.href = ('https://www.linkedin.com/in/j%C3%BAnior-fogassi/');
+  }
+
 
   return (
     <div className="footer-container">
@@ -50,7 +63,7 @@ function Footer() {
               fullWidth
             />
 
-            
+
             <FormControlLabel
               label="Receber novidades do nosso site"
               control={<Switch
@@ -81,28 +94,27 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div className="footer-link-avatar">
             <h2>Vilões | Squad 1</h2>
-          <Stack className="avatar" direction="row" spacing={2}>
-            <Avatar  alt="Guilherme Bender" src="images/gui.png" sx={{ width: 66, height: 66 }} />
-            <Avatar  alt="Alice Guzas" src="images/alice.png"  sx={{ width: 66, height: 66 }} />
-            <Avatar  alt="Júnior Fogassi" src="images/jr.png"  sx={{ width: 66, height: 66 }} />
-          </Stack>
+            <Stack direction="column" spacing={7}>
+              <Avatar alt="Guilherme Bender" src="images/gui.png" sx={{ width: 66, height: 66 }} />
+              <Avatar alt="Alice Guzas" src="images/alice.png" sx={{ width: 66, height: 66 }} />
+              <Avatar alt="Júnior Fogassi" src="images/jr.png" sx={{ width: 66, height: 66 }} />
+            </Stack>
           </div>
-          <div class='footer-link-items'>
+          <div class='footer-link-info'>
             <h2>Integrantes</h2>
-            <Link className="infos" to='/'>Guilherme Bender 
-             guibender_@hotmail.com  
-             Linkedin:Guilherme Bender
-             </Link>
+            <p>Guilherme Bender </p>
+            <Link onClick={linkedinGui}><Linkedin/> Linkedin </Link>
+            <p ><Email/> guibender_@hotmail.com </p>
+            <p>__________________________________</p>
+            <p>Alice Guzas </p>
+            <Link onClick={linkedinAlice}><Linkedin/> Linkedin </Link>
+            <p><Email/> guzasalice@gmail.com </p>
+            <p>__________________________________</p>
+            <p>Júnior Fogassi </p>
+            <Link onClick={linkedinJr}><Linkedin/> Linkedin </Link>
+            <p><Email/> jrfogassi@gmail.com </p>
 
-            <Link className="infos" to='/'>Alice Guzas   
-             guzasalice@gmail.com   
-             Linkedin:Alice Martofel Guzas 
-             </Link>
 
-            <Link className="infos" to='/'>Júnior Fogassi 
-             jrfogassi@gmail.com 
-             Linkedin:Júnior Fogassi 
-             </Link>
           </div>
         </div>
       </div>

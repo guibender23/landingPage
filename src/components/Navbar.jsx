@@ -3,9 +3,7 @@ import { Link } from 'react-scroll';
 import { Button } from './Button.jsx';
 import './Navbar.css';
 import {ReactComponent as VideoGameSVG} from '../svg/videogame.svg';
-import {ReactComponent as HomeSVG} from '../svg/home.svg';
-import {ReactComponent as CalendarSVG} from '../svg/calendar.svg';
-import {ReactComponent as NewsSVG} from '../svg/news.svg';
+
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -43,18 +41,23 @@ function Navbar() {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                        <Link to='banner' smooth={true} className='nav-links' onClick={fecharMenu}>
-                            <HomeSVG/>
-                        </Link>
+                            <Link to='banner' smooth={true} className='nav-links' onClick={fecharMenu}>
+                                Home
+                            </Link>
                         </li>
                         <li className="nav-item">
                             <Link to='cards-news' smooth={true} className='nav-links' onClick={fecharMenu}>
-                                <NewsSVG/>
+                                Novidades
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to='reviews' smooth={true} className='nav-links' onClick={fecharMenu}>
+                                Reviews
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link to='calendar' smooth={true} className='nav-links' onClick={fecharMenu}>
-                                <CalendarSVG/>
+                                Calendário
                             </Link>
                         </li>
                         <li className="nav-item">

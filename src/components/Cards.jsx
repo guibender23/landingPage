@@ -57,9 +57,9 @@ function Cards() {
         <div className='cards' id="reviews">
           <br/><br/>
         <h1>Reviews</h1>
-        <div className='cards_container'>
-          <div className='cards_wrapper'>
-            <ul className='cards_items'>
+        <div className='cards__container'>
+          <div className='cards__wrapper'>
+            <ul className='cards__items'>
               <CardItem
                 src='images/farcry6.jpg'
                 text='Jogamos Far Cry 6: Acerto ou erro da Ubisoft?'
@@ -71,7 +71,7 @@ function Cards() {
                 path='/'
               />
               </ul>
-              <ul className='cards_items'>
+              <ul className='cards__items'>
               <CardItem
                 src='images/riders.jpg'
                 text="Riders Republic: Jogo de esporte do ano?"
@@ -95,8 +95,7 @@ function Cards() {
         <br />
         <br />
         <br />
-        <br />
-        <br />
+        
 
         <h1 >Calendário de Lançamentos</h1>
         <div className='cards__container' id="calendar">
