@@ -5,7 +5,21 @@ import Calendar from './Calendar';
 
 function Cards() {
   return (
-
+    <>
+    <div className='cards' id='video'>
+      <h1>Seja bem-vindo à casa preferida dos Gamers</h1>
+      <div className='cards__container'>
+      <div className='cards__wrapper'>
+    <iframe width="750" height="450" 
+    src="https://www.youtube.com/embed/e-e-X83BOCU" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+    </div>
+    </div>
+    </div>
     <div className='cards' id="cards-news">
       <br /><br />
       <h1>Novidade no mundo dos Games!</h1>
@@ -185,8 +199,7 @@ function Cards() {
         </div>
       </div>
     </div>
-
-  );
+</>
+  );  
 }
-
 export default Cards;
