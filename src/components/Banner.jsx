@@ -7,7 +7,7 @@ import './Banner.css';
 function Banner() {
   return (
     <div className='banner-container' id="banner">
-      <video src='/videos/gameclips.mp4' autoPlay loop muted  />
+      <video className="video-fundo" src='/videos/gameclips.mp4' autoPlay loop muted  />
       <h1>NEOGAMING</h1>
       <p>Notícias do mundo dos Games</p>
       <div className='banner-button'>

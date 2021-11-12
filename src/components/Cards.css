@@ -1,3 +1,8 @@
+.video{
+  width: 1000px;
+}
+
+
 .cards {
   padding: 4rem;
   background: #fff;
@@ -129,3 +134,10 @@ h1 {
     margin-bottom: 2rem;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .video{
+    width: 100%;
+  }
+}
+
