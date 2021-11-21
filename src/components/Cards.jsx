@@ -13,10 +13,10 @@ function Cards() {
             <iframe className="video" height="450"
               src="https://www.youtube.com/embed/e-e-X83BOCU"
               title="YouTube video player"
-              frameborder="0"
-              autoplay
+              frameBorder="0"
+              autoPlay
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
+              allowFullScreen>
             </iframe>
           </div>
         </div>
